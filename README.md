@@ -1,22 +1,44 @@
-# Text Adventure Game in Python
+# Text Adventure Game
 
-## Overview
+This is a simple text-based adventure game implemented in Python. The player is presented with a series of choices and has to navigate through a cave by making the correct decisions.
 
-This is a simple text-based adventure game in Python where players make choices to navigate through a mysterious cave. The game features a basic storyline with different paths and outcomes based on the player's decisions.
+## Gameplay
+
+The game starts with the player outside a mysterious cave. The player can choose to enter the cave or not.
+
+If they enter, they have to explore the cave by choosing between different paths. Choosing the wrong path will lead to failure. 
+
+At certain points, the player will find treasures and keys that unlock new areas and progress the story.
+
+The goal is to successfully navigate through the cave by making the right choices when presented with options. Reaching the end wins the game.
+
+## Code Overview
+
+- `introduction()` displays the opening text
+- `make_choice()` gets player input
+- Different functions represent different parts and paths in the cave
+- Player choices determine the path through the game
+- Wrong choices lead to `game_over()`
+- Reaching `enter_portal()` wins the game
+
+The code is structured as a linear sequence of functions that model the narrative. Player choices steer execution flow through the functions.
 
 ## How to Play
 
-1. Run the `adventure_game.py` script using a Python interpreter.
-   ```bash
-   python adventure_game.py
+Run `python text_based_game.py` to start the game. Follow the prompts and make choices to progress the story.
 
+Try to reach the end by always making the right decisions when given an option.
 
-Follow the prompts to make choices and progress through the adventure.
+## Future Improvements
 
-Your decisions will lead to different paths and outcomes.
+- Add more choices and branching paths
+- Implement inventory system
+- Add NPC characters
+- Improve parser for handling more input varieties
+- Expand the world and story
 
-The game will end with either a win or a loss based on your choices.
+## Disclaimer
 
-## Requirements
-Python 3.x
+This game was built for educational purposes and represents a very simple version of a text adventure game. Significant effort is required to turn it into a full-fledged adventure game.
 
+Suggestions for improvements are welcome!
